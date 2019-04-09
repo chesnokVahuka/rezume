@@ -1,24 +1,61 @@
-$color: #3d6cb0;
-h1
+@import "fonts.scss";
+$color: #111;
+h1,h2
 {
     color: $color;
-    font-size: 20px;
-    font-family: myriad-pro, sans-serif;
+    font-family: 'Conv_MyriadPro-LightSemiExt';
+    
+}
+.body{
+   max-width:1920px;
+   min-width:320px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left_side,
+.right_side{
+    display: flex;   
+    flex-direction: column; 
+    margin-left: 10px;
+    min-width: 480px;
+    align-items: space-between;
+    background: lightgray;
+    
 }
 
-.main_photo{
-    display: flex;    
+.photo_card{
+    min-width:30%;
+    text-align: center;
+    h1,h2{
+        text-transform: uppercase;
+        margin:0px;
+    }
+    h1{
+        font-size:58px;//13.81pt;
+        font-style: normal;
+        
+    }
+    h2{
+        font-family: 'Conv_MyriadPro-Bold';
+        font-size:68px; //16.32pt;
+        font-style:normal;
+        font-weight: normal;
+        margin-top: -22px;
+        
+    }
+    span {        
+        font-family: 'Conv_MyriadPro-Bold';
+        font-size:28px;// 6.61pt;
+        text-transform: uppercase;
+        margin:0px;        
+    }
 }
-.photo_1{
-   flex:1;
-   float: right;
-    order:1;
-    background: lightgray;
-    width:30%;
-}
+
 .photo_2{
-    
-    order:2;
-    background: lightgray;
-    width:30%;
+    margin: 20px;
+    min-width:30%;
 }

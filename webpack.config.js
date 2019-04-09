@@ -48,7 +48,16 @@ let conf = {
                 options: {
                       pretty: true,
                   },
-                }
+            },
+            {
+                test: /\.(png|jpg|gif|eot|svg|ttf|woff|woff2)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {},
+                  },
+                ],
+            }
         ]
     },
     devtool: 'eval-sourcemap'
