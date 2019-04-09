@@ -23,8 +23,14 @@ h1,h2
     margin-left: 10px;
     min-width: 480px;
     align-items: space-between;
-    background: lightgray;
-    
+    background: lightgray;    
+}
+
+.left_side{
+    flex-grow:1;
+}
+.right_side{
+    flex-grow:3;
 }
 
 .photo_card{
@@ -37,6 +43,7 @@ h1,h2
     h1{
         font-size:58px;//13.81pt;
         font-style: normal;
+        margin-top: 4%;
         
     }
     h2{
@@ -51,6 +58,8 @@ h1,h2
         font-family: 'Conv_MyriadPro-Bold';
         font-size:28px;// 6.61pt;
         text-transform: uppercase;
+        font-style:normal;
+        font-weight: normal;
         margin:0px;        
     }
 }
