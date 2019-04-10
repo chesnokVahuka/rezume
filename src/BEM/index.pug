@@ -7,12 +7,20 @@ body
     div(class='main')
         div(class='left_side')
             div(class='photo_card')
-                svg(width="257px", height="257px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
-                    circle(cx="128.5", cy="128.5", r="128.5", fill="#fff",stroke='#3d6cb0')
-                    circle(cx="128.5", cy="128.5", r="112", fill="#3d6cb0")
+                svg(viewBox="0 0 262 262",preserveAspectRatio="none",width="262px", height="262px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+                    //- defs
+                    //-     pattern(x="0", y="0",id="wood",width="300px",height="400px",patternUnits="userSpaceOnUse")
+                    //-         image(href="https://avatars.mds.yandex.net/get-pdb/34158/0327833d-a134-41f1-ac59-e4cd6937d29e/s1200",width="100%",height="100%")
+                    circle(cx="128", cy="128", r="128",stroke='#3d6cb0', fill="url('#wood')")
+                    circle(cx="128", cy="128", r="112",fill="#3d6cb0")
                 h1 name here
                 h2 surname
                 span graphic designer
+            div(class='profile')
+                div(class='profile__icon')
+                span profile
+                hr
+
                 
         div(class='right_side')
             div(class='photo_1')
