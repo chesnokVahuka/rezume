@@ -7,20 +7,20 @@ body
     div(class='main')
         div(class='left_side')
             div(class='photo_card')
-                svg(viewBox="0 0 262 262",preserveAspectRatio="none",width="262px", height="262px", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
-                    //- defs
-                    //-     pattern(x="0", y="0",id="wood",width="300px",height="400px",patternUnits="userSpaceOnUse")
-                    //-         image(href="https://avatars.mds.yandex.net/get-pdb/34158/0327833d-a134-41f1-ac59-e4cd6937d29e/s1200",width="100%",height="100%")
-                    circle(cx="128", cy="128", r="128",stroke='#3d6cb0', fill="url('#wood')")
-                    circle(cx="128", cy="128", r="112",fill="#3d6cb0")
+                div(class='photo_card__image')
+                    img(src="https://avatars.mds.yandex.net/get-pdb/34158/0327833d-a134-41f1-ac59-e4cd6937d29e/s1200", alt="avatar")
+               
                 h1 name here
                 h2 surname
                 span graphic designer
-            div(class='profile')
-                div(class='profile__icon')
-                span profile
-                hr
-
+            div(class='about_me')
+                div(class='about_me__icon')
+                    img(src="src/image/profile_icon.png", alt="profile_icon")
+                div(class='about_me__header')
+                    span profile
+                div(class='line')
+                div(class='text')
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo quidem qui deserunt! Blanditiis obcaecati exercitationem veritatis veniam, alias excepturi quas saepe consectetur asperiores labore corporis quaerat inventore minima. Quisquam.
                 
         div(class='right_side')
             div(class='photo_1')
