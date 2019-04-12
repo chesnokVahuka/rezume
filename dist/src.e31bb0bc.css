@@ -1,5 +1,185 @@
-h1 {
-  color: red;
+@charset "UTF-8";
+@font-face {
+  font-family: "Conv_MyriadPro-LightSemiExtIt";
+  src: url("/MyriadPro-LightSemiExtIt.38fe2332.eot");
+  src: local("☺"), url("/MyriadPro-LightSemiExtIt.da82549e.woff") format("woff"), url("/MyriadPro-LightSemiExtIt.67a04734.ttf") format("truetype"), url("/MyriadPro-LightSemiExtIt.866a17c4.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_MyriadPro-Bold";
+  src: url("/MyriadPro-Bold.4674dbb8.eot");
+  src: local("☺"), url("/MyriadPro-Bold.d542aaf1.woff") format("woff"), url("/MyriadPro-Bold.0c38467e.ttf") format("truetype"), url("/MyriadPro-Bold.fcb8f1c9.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_MyriadPro-LightSemiExt";
+  src: url("/MyriadPro-LightSemiExt.c48ee399.eot");
+  src: local("☺"), url("/MyriadPro-LightSemiExt.833c2fcd.woff") format("woff"), url("/MyriadPro-LightSemiExt.0a7b3f46.ttf") format("truetype"), url("/MyriadPro-LightSemiExt.dfc34c29.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2 {
+  color: #111;
+  font-family: "Conv_MyriadPro-LightSemiExt";
+}
+
+.body {
+  max-width: 1920px;
+  min-width: 320px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  min-width: 480px;
+  align-items: space-between;
+  background: lightgray;
+}
+
+.left-side {
+  flex-grow: 1;
+  width: 44%;
+}
+
+.right-side {
+  flex-grow: 1;
+  margin-left: 2px;
+  width: 54%;
+}
+
+.photo-card {
+  margin-top: 10%;
+  margin-left: 0%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.photo-card .photo-card__image {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 16vw;
+  height: 16vw;
+  border: 1vw solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #3d6cb0;
+}
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.photo-card h1, .photo-card h2 {
+  text-transform: uppercase;
+  margin: 0px;
+}
+.photo-card h1 {
+  font-size: 4.3vw;
+  font-style: normal;
+  margin-top: 6%;
+}
+.photo-card h2 {
+  font-family: "Conv_MyriadPro-Bold";
+  font-size: 4.9vw;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: -3%;
+}
+.photo-card span {
+  font-family: "Conv_MyriadPro-Bold";
+  font-size: 1.9vw;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.about-me {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+  max-width: 76%;
+}
+.about-me .about-me__icon {
+  align-self: center;
+}
+.about-me .about-me__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+.about-me .about-me__header {
+  margin-left: 2%;
+  align-self: center;
+}
+.about-me .about-me__header span {
+  font-family: "Conv_MyriadPro-Bold";
+  color: #3d6cb0;
+  font-size: 3.4vw;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+}
+.about-me .about-me__line {
+  flex-grow: 1;
+  margin-left: 4%;
+  align-self: center;
+  border-bottom: 5px solid #3d6cb0;
+}
+.about-me .about-me__text p {
+  font-family: "Conv_MyriadPro-LightSemiExt";
+}
+.about-me .about-me__text p span {
+  font-family: "Conv_MyriadPro-Bold";
+}
+.about-me .contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 4%;
+}
+.about-me .contact .contact__item {
+  margin-top: 2%;
+}
+.about-me .contact .contact__item .heading {
+  font-family: "Conv_MyriadPro-Bold";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6vw;
+  color: #3d6cb0;
+  display: block;
+  float: left;
+  margin-right: 13%;
+  width: 80px;
+}
+.about-me .contact .contact__item .inner {
+  font-family: "Conv_MyriadPro-Bold";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #111;
+  display: block;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -148,22 +148,33 @@ h1,h2
         flex-wrap: wrap;
         flex-direction: column;
         flex-basis: 100%;
-
-        h3{
-            float: left;
-        }
-
-        span{
-           display: inline-block;
-           margin-top:auto;
-        }
+        margin-top: 4%;
         .contact__item{
-            
+          margin-top: 2%;
+            .heading{       
+                font-family: 'Conv_MyriadPro-Bold';
+                text-transform: uppercase;
+                font-style:normal;
+                font-weight: normal;  
+                font-size: 1.6vw;     
+                color:#3d6cb0;
+                display: block;
+                float: left;
+                margin-right:13%;
+                width:80px;
+                
+            }
+            .inner{
+                font-family: 'Conv_MyriadPro-Bold';
+                text-transform: uppercase;
+                font-style:normal;
+                font-weight: normal;
+                font-size: 18px;//1.5vw;
+                color:#111;
+                display: block;
+
+            }
         }
     }
     
-}
-.photo_2{
-    margin: 20px;
-    min-width:30%;
 }

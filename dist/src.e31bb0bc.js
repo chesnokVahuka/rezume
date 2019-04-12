@@ -184,16 +184,16 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style.scss":[function(require,module,exports) {
+},{"./bundle-url":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./fonts\\MyriadPro-LightSemiExtIt.eot":[["MyriadPro-LightSemiExtIt.38fe2332.eot","css/fonts/MyriadPro-LightSemiExtIt.eot"],"css/fonts/MyriadPro-LightSemiExtIt.eot"],"./fonts\\MyriadPro-LightSemiExtIt.woff":[["MyriadPro-LightSemiExtIt.da82549e.woff","css/fonts/MyriadPro-LightSemiExtIt.woff"],"css/fonts/MyriadPro-LightSemiExtIt.woff"],"./fonts\\MyriadPro-LightSemiExtIt.ttf":[["MyriadPro-LightSemiExtIt.67a04734.ttf","css/fonts/MyriadPro-LightSemiExtIt.ttf"],"css/fonts/MyriadPro-LightSemiExtIt.ttf"],"./fonts\\MyriadPro-LightSemiExtIt.svg":[["MyriadPro-LightSemiExtIt.866a17c4.svg","css/fonts/MyriadPro-LightSemiExtIt.svg"],"css/fonts/MyriadPro-LightSemiExtIt.svg"],"./fonts\\MyriadPro-Bold.eot":[["MyriadPro-Bold.4674dbb8.eot","css/fonts/MyriadPro-Bold.eot"],"css/fonts/MyriadPro-Bold.eot"],"./fonts\\MyriadPro-Bold.woff":[["MyriadPro-Bold.d542aaf1.woff","css/fonts/MyriadPro-Bold.woff"],"css/fonts/MyriadPro-Bold.woff"],"./fonts\\MyriadPro-Bold.ttf":[["MyriadPro-Bold.0c38467e.ttf","css/fonts/MyriadPro-Bold.ttf"],"css/fonts/MyriadPro-Bold.ttf"],"./fonts\\MyriadPro-Bold.svg":[["MyriadPro-Bold.fcb8f1c9.svg","css/fonts/MyriadPro-Bold.svg"],"css/fonts/MyriadPro-Bold.svg"],"./fonts\\MyriadPro-LightSemiExt.eot":[["MyriadPro-LightSemiExt.c48ee399.eot","css/fonts/MyriadPro-LightSemiExt.eot"],"css/fonts/MyriadPro-LightSemiExt.eot"],"./fonts\\MyriadPro-LightSemiExt.woff":[["MyriadPro-LightSemiExt.833c2fcd.woff","css/fonts/MyriadPro-LightSemiExt.woff"],"css/fonts/MyriadPro-LightSemiExt.woff"],"./fonts\\MyriadPro-LightSemiExt.ttf":[["MyriadPro-LightSemiExt.0a7b3f46.ttf","css/fonts/MyriadPro-LightSemiExt.ttf"],"css/fonts/MyriadPro-LightSemiExt.ttf"],"./fonts\\MyriadPro-LightSemiExt.svg":[["MyriadPro-LightSemiExt.dfc34c29.svg","css/fonts/MyriadPro-LightSemiExt.svg"],"css/fonts/MyriadPro-LightSemiExt.svg"],"_css_loader":"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-require("./style.scss");
-},{"./style.scss":"style.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("./css/style.scss");
+},{"./css/style.scss":"css/style.scss"}],"C:/Users/User/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35704" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

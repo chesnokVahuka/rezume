@@ -163,9 +163,24 @@ h1, h2 {
   display: inline-block;
   margin-top: auto;
 }
-.photo_2 {
-  margin: 20px;
-  min-width: 30%;
+.about-me .contact .contact__item .heading {
+  font-family: "Conv_MyriadPro-Bold";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  color: #3d6cb0;
+  display: block;
+  float: left;
+  margin-right: 10%;
+  width: 80px;
+}
+.about-me .contact .contact__item .inner {
+  font-family: "Conv_MyriadPro-LightSemiExt";
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  color: #111;
+  display: block;
 }
 
 /*# sourceMappingURL=/style.6b54f5b7.css.map */
