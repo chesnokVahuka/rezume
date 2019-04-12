@@ -16,29 +16,37 @@ h1,h2
     flex-wrap: wrap;
     justify-content: center;
 }
-.left_side,
-.right_side{
+.left-side,
+.right-side{
     display: flex; 
     flex-shrink: 1;  
-    flex-direction: column; 
-    margin-left: 10px;
+    flex-direction: column;     
     min-width: 480px;
     align-items: space-between;
-    background: lightgray;    
+    background: lightgray; 
+       
 }
 
-.left_side{
+.left-side{
     flex-grow:1;
+    width:44%;
+    // max-width: 39vw;    
 }
-.right_side{
-    flex-grow:2;
+.right-side{
+    flex-grow:1;
+    margin-left: 2px;
+    width:54%;
 }
 
-.photo_card{
-    
+.photo-card{
+    margin-top:10%;
+    margin-left: 0%;
+    margin-bottom: 3%;
+    // padding-top: 10%;
+    // padding-left: 0%;
     text-align: center;    
 
-   .photo_card__image{
+   .photo-card__image{
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
@@ -61,17 +69,17 @@ h1,h2
         margin:0px;
     }
     h1{
-        font-size:4.4vw;//3.7em;//58px;//13.81pt;
+        font-size:4.3vw;//3.7em;//58px;//13.81pt;
         font-style: normal;
-        margin-top: 4%;
+        margin-top: 6%;
         
     }
     h2{
         font-family: 'Conv_MyriadPro-Bold';
-        font-size:5vw;//68px; //16.32pt;
+        font-size:4.9vw;//68px; //16.32pt;
         font-style:normal;
         font-weight: normal;
-        margin-top: -22px;
+        margin-top: -3%;
         
     }
     span {        
@@ -84,40 +92,74 @@ h1,h2
     }
 }
 
-.about_me{
-    margin-top: 20%;
+.about-me{
+    margin-top: 10%;
+    margin-left: 10%;//12
+    margin-right: 15%;
     display: flex;
     flex-wrap: wrap;
-    max-width: 30vw;
-    .about_me__icon{
-        align-self: center;
-        margin-left: 5vw;
-        object-fit: cover;
-        width:7.5vw;
-        height: 7.5vw;
-        // width:80px;
-        // height: 80px;
-        // background: url(../image/profile_icon.png);
+    flex-basis: 40%;
+    max-width: 76%;
+    .about-me__icon{
+        align-self: center; 
+        // background: url('../image/profile_icon.png') no-repeat;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            width:auto;
+            height: auto;
+            overflow: hidden;
+        }       
+        
+       
     }
-    .about_me__header{        
-        margin-left: 3vw;
+    .about-me__header{        
+        margin-left: 2%;
         align-self: center;
         
         span{          
             font-family: 'Conv_MyriadPro-Bold';
             color: #3d6cb0;
-            font-size:3.3vw;//45px;
+            font-size:3.4vw;//45px;
             text-transform: uppercase;
             font-style:normal;
             font-weight: normal;
         }
         
     }
-    .line{
-        
-        margin-left: 1vw;
+    .about-me__line{
+        flex-grow: 1;       
+        margin-left: 4%;
         align-self: center;
-        border-bottom: 1vh solid #3d6cb0;
+        border-bottom: 5px solid #3d6cb0;
+    }
+    .about-me__text{
+        p{
+        font-family: 'Conv_MyriadPro-LightSemiExt';
+        
+            span{
+                font-family: 'Conv_MyriadPro-Bold';
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 100%;
+
+        h3{
+            float: left;
+        }
+
+        span{
+           display: inline-block;
+           margin-top:auto;
+        }
+        .contact__item{
+            
+        }
     }
     
 }
