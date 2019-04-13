@@ -61,7 +61,7 @@ h1, h2 {
 .photo-card {
   margin-top: 10%;
   margin-left: 0%;
-  margin-bottom: 3%;
+  margin-bottom: 6.2%;
   text-align: center;
 }
 .photo-card .photo-card__image {
@@ -107,7 +107,7 @@ h1, h2 {
 }
 
 .about-me {
-  margin-top: 10%;
+  margin-top: 7.5%;
   margin-left: 10%;
   margin-right: 15%;
   display: flex;
@@ -146,21 +146,19 @@ h1, h2 {
 }
 .about-me .about-me__text p {
   font-family: "Conv_MyriadPro-LightSemiExt";
+  font-size: 1.193vw;
 }
 .about-me .about-me__text p span {
   font-family: "Conv_MyriadPro-Bold";
 }
-.about-me .contact {
+.about-me .about-me__inner {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-basis: 100%;
-  margin-top: 4%;
+  margin-top: 5%;
 }
-.about-me .contact .contact__item {
-  margin-top: 2%;
-}
-.about-me .contact .contact__item .heading {
+.about-me .about-me__inner .heading {
   font-family: "Conv_MyriadPro-Bold";
   text-transform: uppercase;
   font-style: normal;
@@ -168,18 +166,28 @@ h1, h2 {
   font-size: 1.6vw;
   color: #3d6cb0;
   display: block;
+}
+.about-me .about-me__inner .contact__item {
+  margin-top: 2%;
+}
+.about-me .about-me__inner .contact__item .heading_left {
   float: left;
   margin-right: 13%;
   width: 80px;
 }
-.about-me .contact .contact__item .inner {
-  font-family: "Conv_MyriadPro-Bold";
-  text-transform: uppercase;
+.about-me .about-me__inner .contact__item .inner {
+  font-family: "Conv_MyriadPro-LightSemiExt";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.6vw;
   color: #111;
   display: block;
+}
+.about-me .about-me__inner .contact__item .heading_center {
+  width: 150px;
+}
+.about-me .about-me__inner_align-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
