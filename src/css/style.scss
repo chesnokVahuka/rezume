@@ -22,7 +22,7 @@ h1,h2
     flex-shrink: 1;  
     flex-direction: column;     
     min-width: 480px;
-    align-items: space-between;
+    // align-items: space-between;
     background: lightgray; 
        
 }
@@ -98,7 +98,7 @@ h1,h2
     margin-right: 15%;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 40%;
+    // flex-basis: 40%; // возможно не нужен
     max-width: 76%;
     .about-me__icon{
         align-self: center; 
@@ -173,18 +173,104 @@ h1,h2
                 font-weight: normal;
                 font-size: 1.6vw; //18px;//
                 color:#111;
-                display: block;
-
+                display: block;               
             }
-            .heading_center{         
-                width: 150px;
-              }
-              
-        }.skill__item{
+          
+
+          
+     
+        }.skills__item{
            
+            .inner__list{
+                // display: block;
+                // list-style: none;
+                padding-left:0px;
+                margin-left: 1.8vw;
+                li{
+                    display: inline-block;
+                    width:1.3vw;
+                    height: 1.3vw;
+                    margin-right: 0.9vw;                   
+                    border-radius: 50%;
+                    background: #3d6cb0;
+                }
+            }
+            .inner__list_creative{
+                li:nth-last-child(-n+3){
+                    background: #e6e6e6;
+                }
+            }
+            .inner__list_teamwork{
+                li:nth-last-child(1){
+                    background: #e6e6e6;
+                }
+            }
+            .inner__list_innovate{
+                li:nth-last-child(-n+6){
+                    background: #e6e6e6;
+                }
+            }
+            .inner__list_communication{
+                li:nth-last-child(1){
+                    background: #e6e6e6;
+                }
+            }
+         
         }
     }  
     .about-me__inner_align-center{
-        text-align: center;
+        text-align: center;      
+        .heading_center{            
+            color:#111;
+        } 
     } 
+
+    .about-me__list{
+        list-style:disc;
+        font-size: 5vw;
+        margin:0;
+        padding-left: 10%;
+        li{
+            height: auto;
+        }
+       .item{
+           display: inline-block;
+           position: relative;
+           top:-0.8vw;
+       }
+        .item__header{
+           
+            font-family: 'Conv_MyriadPro-Bold';
+            font-style:normal;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 2vw; //18px;//
+            color:#3d6cb0;
+                   
+         }
+         .item__header_dark{
+             color:#111;
+         }
+         .item__date{
+            font-family: 'Conv_MyriadPro-LightSemiExt';
+            font-style:normal;
+            font-weight: normal; 
+            margin-left: 4%;
+            font-size: 2vw;
+         }
+         .content{
+            display:block;
+            position: relative;
+            top:-2vw;
+            //  font-size: 1.5vw;
+            margin-top:-2vw;
+         }
+         
+         .content__description{
+             font-size: 1vw;
+             margin:0;
+         }
+    }
+    
+   
 }
