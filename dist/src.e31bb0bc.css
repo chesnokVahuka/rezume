@@ -43,7 +43,6 @@ h1, h2 {
   flex-shrink: 1;
   flex-direction: column;
   min-width: 480px;
-  background: lightgray;
 }
 
 .left-side {
@@ -67,8 +66,8 @@ h1, h2 {
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
-  width: 16vw;
-  height: 16vw;
+  width: 16.5vw;
+  height: 16.5vw;
   border: 1vw solid #fff;
   border-radius: 50%;
   overflow: hidden;
@@ -213,25 +212,31 @@ h1, h2 {
 }
 .about-me .about-me__list {
   list-style: disc;
-  font-size: 5vw;
-  margin: 0;
+  margin-top: 10%;
   padding-left: 10%;
 }
 .about-me .about-me__list li {
-  height: auto;
+  margin-top: 2%;
+  font-size: 5vw;
 }
 .about-me .about-me__list .item {
-  display: inline-block;
   position: relative;
   top: -0.8vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 .about-me .about-me__list .item__header {
   font-family: "Conv_MyriadPro-Bold";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 28px;
   color: #3d6cb0;
+}
+.about-me .about-me__list .item__header_dark_weight-light {
+  color: #111;
+  font-family: "Conv_MyriadPro-LightSemiExt";
+  font-size: 28px;
 }
 .about-me .about-me__list .item__header_dark {
   color: #111;
@@ -245,13 +250,51 @@ h1, h2 {
 }
 .about-me .about-me__list .content {
   display: block;
-  position: relative;
-  top: -2vw;
-  margin-top: -2vw;
+  font-size: 1.5vw;
 }
 .about-me .about-me__list .content__description {
-  font-size: 1vw;
+  font-family: "Conv_MyriadPro-LightSemiExt";
+  font-size: 17px;
   margin: 0;
+}
+
+.right-side__about-me {
+  margin-left: 0px;
+}
+
+.software {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.programm {
+  margin-right: 5%;
+}
+
+.programm__name {
+  display: block;
+  width: 40%;
+  font-family: "Conv_MyriadPro-Bold";
+  font-size: 1.6vw;
+  text-transform: uppercase;
+}
+
+.programm__indicator {
+  display: inline-block;
+  background: #3d6cb0;
+  height: 1.6vw;
+}
+
+.programm__indicator_size_15 {
+  width: 15vw;
+}
+
+.programm__indicator_size_5 {
+  width: 5vw;
+}
+
+.programm__indicator_grey {
+  background: #e6e6e6;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

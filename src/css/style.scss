@@ -23,7 +23,7 @@ h1,h2
     flex-direction: column;     
     min-width: 480px;
     // align-items: space-between;
-    background: lightgray; 
+    // background: lightgray; 
        
 }
 
@@ -50,8 +50,8 @@ h1,h2
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    width: 16vw;
-    height: 16vw;
+    width: 16.5vw;
+    height: 16.5vw;
     border: 1vw solid#fff;
     border-radius: 50%;
     overflow: hidden;
@@ -111,7 +111,7 @@ h1,h2
             height: auto;
             overflow: hidden;
         }       
-        
+       
        
     }
     .about-me__header{        
@@ -225,31 +225,41 @@ h1,h2
         } 
     } 
 
-    .about-me__list{
+    .about-me__list{      
         list-style:disc;
-        font-size: 5vw;
-        margin:0;
+        margin-top:10%;
         padding-left: 10%;
-        li{
-            height: auto;
+        li{     
+            margin-top:2%;       
+            font-size: 5vw;           
+            // font-size:1vw;            
         }
+      
        .item{
-           display: inline-block;
-           position: relative;
-           top:-0.8vw;
+        //    display: inline-block;
+        position: relative;
+        top:-0.8vw;
+        display: flex;
+        flex-wrap: wrap;
        }
+
         .item__header{
-           
+            // display: block;
             font-family: 'Conv_MyriadPro-Bold';
             font-style:normal;
             font-weight: normal;
             text-transform: uppercase;
-            font-size: 2vw; //18px;//
+            font-size: 28px;//2vw; //18px;//
             color:#3d6cb0;
                    
          }
-         .item__header_dark{
+         .item__header_dark_weight-light{
              color:#111;
+             font-family:  'Conv_MyriadPro-LightSemiExt';
+             font-size: 28px;
+         }
+         .item__header_dark{
+             color: #111;
          }
          .item__date{
             font-family: 'Conv_MyriadPro-LightSemiExt';
@@ -260,17 +270,50 @@ h1,h2
          }
          .content{
             display:block;
-            position: relative;
-            top:-2vw;
-            //  font-size: 1.5vw;
-            margin-top:-2vw;
+            // position: relative;
+            // top:-2vw;
+             font-size: 1.5vw;
+            // margin-top:-2vw;
          }
          
          .content__description{
-             font-size: 1vw;
-             margin:0;
+            font-family: 'Conv_MyriadPro-LightSemiExt'; 
+            font-size: 17px;//1vw;
+            margin:0;
          }
     }
     
    
+}
+.right-side__about-me{
+    margin-left:0px;
+} 
+.software{
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+}
+.programm{
+    margin-right: 5%;
+}
+.programm__name{
+    display: block;
+    width: 40%;
+    font-family: 'Conv_MyriadPro-Bold'; 
+    font-size: 1.6vw;//28px;
+    text-transform: uppercase;
+}
+.programm__indicator{
+    display: inline-block;
+    background: #3d6cb0;   
+    height:1.6vw;// 15px;
+}
+.programm__indicator_size_15{
+    width:15vw;//150px;
+}
+.programm__indicator_size_5{
+    width:5vw;//150px;
+}
+.programm__indicator_grey{
+    background: #e6e6e6;
 }
